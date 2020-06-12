@@ -35,7 +35,7 @@ public class CronoSopa extends Thread {
        SopaGame.seg++;
        if (SopaGame.seg > 59){
            SopaGame.seg = 0;
-           
+           SoupScores.setPuntaje();
            
            SopaGame.iniciarHilo = false;
            SopaGame.ventana.setVisible(false);
