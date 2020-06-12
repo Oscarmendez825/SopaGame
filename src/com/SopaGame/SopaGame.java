@@ -35,7 +35,7 @@ public class SopaGame extends javax.swing.JFrame{
         for (int i = 0; i < letters.length; i++) {
             words[i] = word[i].getText();
         }
-
+        iniciarCrono();
         ventana = this;
         
     }
@@ -257,7 +257,10 @@ public class SopaGame extends javax.swing.JFrame{
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    private void iniciarCrono() {
+            CronoSopa crono = new CronoSopa(labelC);
+            crono.start();
+    }
 
     
     private void putwords() {
